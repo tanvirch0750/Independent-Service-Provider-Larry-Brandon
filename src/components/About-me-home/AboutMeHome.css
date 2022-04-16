@@ -1,5 +1,5 @@
 .about-me-home {
-  padding: 8rem 0;
+  padding: 8rem 0 !important;
   display: flex;
   align-items: center;
   gap: 10rem;

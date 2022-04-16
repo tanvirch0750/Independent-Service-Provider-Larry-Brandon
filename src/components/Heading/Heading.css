@@ -1,0 +1,22 @@
+.heading {
+  text-align: center;
+  padding: 4.8rem 0;
+}
+
+.heading-inner {
+  padding: 0 10rem;
+}
+
+.heading h1 {
+  font-size: 6.2rem;
+  font-weight: 300;
+  line-height: 1.1;
+  margin-bottom: 2.4rem;
+}
+
+.heading p {
+  font-size: 1.6rem;
+  color: #ea5c43;
+  font-weight: 600;
+  text-transform: uppercase;
+}
