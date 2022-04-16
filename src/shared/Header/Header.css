@@ -6,15 +6,6 @@
   justify-content: space-between;
 }
 
-.logo {
-  color: #1c1e3c;
-  font-size: 4rem;
-}
-
-.logo span {
-  color: #ea5c43;
-}
-
 .navigation {
   display: flex;
   gap: 2rem;

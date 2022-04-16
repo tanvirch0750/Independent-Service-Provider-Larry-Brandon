@@ -7,3 +7,17 @@
   cursor: pointer;
   text-transform: capitalize;
 }
+
+.btn-subs {
+  background-color: #fff;
+  color: #ea5c43;
+}
+
+.logo {
+  color: #1c1e3c;
+  font-size: 4rem;
+}
+
+.logo span {
+  color: #ea5c43;
+}

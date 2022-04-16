@@ -1,0 +1,24 @@
+.footer {
+  padding: 6.4rem 0;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+
+.footer .social-link {
+  cursor: pointer;
+  font-size: 1.8rem;
+  margin-bottom: 2.4rem;
+  transition: 300ms;
+}
+
+.footer .social-link span:hover {
+  color: #ea5c43;
+}
+
+.footer-logo {
+  margin-bottom: 2.4rem;
+}
+
+.footer .copy-text {
+  font-size: 1.4rem;
+}

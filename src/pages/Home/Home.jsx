@@ -1,6 +1,7 @@
 import React from "react";
 import AboutMeHome from "../../components/About-me-home/AboutMeHome";
 import Banner from "../../components/Banner/Banner";
+import CallToAction from "../../components/CallToAction/CallToAction";
 import Heading from "../../components/Heading/Heading";
 import Services from "../../components/Services/Services";
 import "./Home.css";
@@ -17,6 +18,7 @@ const Home = () => {
         />
         <Services />
       </div>
+      <CallToAction />
     </>
   );
 };

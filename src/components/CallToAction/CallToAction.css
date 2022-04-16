@@ -1,0 +1,28 @@
+.call-to-action {
+  background: linear-gradient(rgba(234, 92, 67, 0.9), rgba(234, 92, 67, 0.9)),
+    url("../../Images/Banner/call-to-action.jpg");
+  background-size: cover;
+  padding: 9.6rem 0;
+  text-align: center;
+}
+
+.call-to-action h1 {
+  font-size: 5.2rem;
+  color: #fff;
+  font-weight: 300;
+  margin-bottom: 3.2rem;
+}
+
+.call-to-action p {
+  color: #fff;
+  font-size: 1.8rem;
+  margin-bottom: 2.4rem;
+}
+
+.input-container input {
+  padding: 1.6rem 6rem;
+  font-size: 2rem;
+  border: none;
+  background-color: #fff;
+  margin-right: 1.4rem;
+}
