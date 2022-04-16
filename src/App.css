@@ -11,6 +11,8 @@
 .btn-subs {
   background-color: #fff;
   color: #ea5c43;
+  text-transform: none;
+  font-weight: 700;
 }
 
 .logo {
