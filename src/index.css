@@ -103,3 +103,15 @@ h6 {
   margin: 0 auto;
   padding: 0 3.2rem;
 }
+
+.Toastify__toast-container {
+  font-size: 1.8rem;
+  padding: 0;
+  top: 155px;
+}
+.Toastify__toast {
+  justify-content: center;
+}
+.Toastify__close-button {
+  display: none;
+}

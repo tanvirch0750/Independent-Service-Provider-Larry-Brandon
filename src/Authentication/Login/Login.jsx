@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from "react";
 import {
   useAuthState,
+  useSendPasswordResetEmail,
   useSignInWithEmailAndPassword,
 } from "react-firebase-hooks/auth";
 import { Link, useLocation, useNavigate } from "react-router-dom";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import FormInput from "../../components/FormInput/FormInput";
 import PageHeadImg from "../../components/PageHeadingImg/PageHeadImg";
 import auth from "../Firebase/Firebase.init";
@@ -15,6 +18,8 @@ const Login = () => {
   const [user1] = useAuthState(auth);
   const [signInWithEmailAndPassword, user, loading, error] =
     useSignInWithEmailAndPassword(auth);
+  const [sendPasswordResetEmail, sending, errorReset] =
+    useSendPasswordResetEmail(auth);
 
   const location = useLocation();
   const from = location?.state?.from?.pathname || "/";
@@ -64,6 +69,20 @@ const Login = () => {
     signInWithEmailAndPassword(values.email, values.password);
   };
 
+  const handleResetEmail = async () => {
+    await sendPasswordResetEmail(values.email);
+
+    toast.success("A password reset eamil is send to your email", {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
+  };
+
   const navigate = useNavigate();
   useEffect(() => {
     if (user) {
@@ -92,6 +111,21 @@ const Login = () => {
           ))}
           {customError && <p className="error-message">{customError}</p>}
           <button>Login</button>
+          <ToastContainer
+            position="top-right"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+          />
+          <p className="forgot-password--text">
+            Forgot your password?{" "}
+            <span onClick={handleResetEmail}>Reset your password</span>
+          </p>
           <p className="login-signup-text">
             Don't have an account?{" "}
             <Link to="/signup" className="login-signup-link">
