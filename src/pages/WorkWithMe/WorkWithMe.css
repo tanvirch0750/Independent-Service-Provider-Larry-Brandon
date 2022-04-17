@@ -1,0 +1,31 @@
+.work-with-me {
+  padding: 8rem 10rem;
+}
+
+.work-with-me p {
+  font-size: 2rem;
+  line-height: 1.6;
+}
+
+.services-list {
+  padding: 8rem;
+  padding-bottom: 10rem;
+  max-width: 100rem;
+  margin: 0 auto;
+}
+
+.service-list-container {
+  display: flex;
+  gap: 6rem;
+  justify-content: center;
+}
+
+.services-list h2 {
+  font-size: 4rem;
+  margin-bottom: 4.8rem;
+}
+
+.service-list-container li {
+  font-size: 1.8rem;
+  margin-bottom: 1.6rem;
+}

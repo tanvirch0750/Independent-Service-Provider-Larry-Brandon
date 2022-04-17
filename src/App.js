@@ -5,6 +5,7 @@ import RequireAuth from "./Authentication/RequireAuth/RequireAuth";
 import Signup from "./Authentication/Signup/Signup";
 import Checkout from "./pages/Checkout/Checkout";
 import Home from "./pages/Home/Home";
+import WorkWithMe from "./pages/WorkWithMe/WorkWithMe";
 import Footer from "./shared/Footer/Footer";
 import Header from "./shared/Header/Header";
 
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<Home />}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/signup" element={<Signup />}></Route>
+        <Route path="/work-with-me" element={<WorkWithMe />}></Route>
         <Route
           path="/checkout/:id"
           element={

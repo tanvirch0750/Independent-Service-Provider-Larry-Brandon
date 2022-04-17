@@ -1,8 +1,10 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import selfImg from "../../Images/Self/self.jpg";
 import "./AboutMeHome.css";
 
 const AboutMeHome = () => {
+  const navigate = useNavigate();
   return (
     <section className="about-me-home container">
       <div className="about-me-home-img-box">
@@ -28,7 +30,12 @@ const AboutMeHome = () => {
             <li>And More</li>
           </ul>
         </div>
-        <button className="btn btn-primary">My Services</button>
+        <button
+          onClick={() => navigate("/work-with-me")}
+          className="btn btn-primary"
+        >
+          My Services
+        </button>
       </div>
     </section>
   );

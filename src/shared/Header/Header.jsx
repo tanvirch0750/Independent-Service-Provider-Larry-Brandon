@@ -25,9 +25,6 @@ const Header = () => {
         <Link className="navigation-link" to="/about">
           About
         </Link>
-        <Link className="navigation-link" to="/services">
-          Services
-        </Link>
         <Link className="navigation-link" to="/work-with-me">
           Work With Me
         </Link>
