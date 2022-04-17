@@ -6,10 +6,19 @@
   max-width: 100rem;
   display: grid;
   grid-template-columns: 1fr 1fr !important;
+
   grid-gap: 3rem;
   margin: 0 auto;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   padding: 4.8rem;
+}
+
+.checkout-container.av-form-data {
+  align-items: center;
+}
+
+.checkout-container.av-form-data .book-thank-you {
+  display: none;
 }
 
 .book-details {
@@ -82,12 +91,31 @@
   margin-bottom: 2.4rem;
 }
 
+.book-form-input-control {
+  margin-bottom: 0.5rem;
+}
+
 .book-form-input-control input {
   width: 100%;
   padding: 2rem 1rem;
   border: 1px solid #ea5c43;
-  margin-bottom: 2rem;
+  margin-bottom: 0.8rem;
   font-size: 1.6rem;
+}
+
+.book-form-error-message {
+  font-size: 1.6rem;
+  margin-left: 1rem;
+  color: #ea5c43;
+  margin-bottom: 1rem;
+}
+
+.book-message {
+  font-size: 3rem;
+  font-family: "Martel Sans", sans-serif;
+  font-weight: 500;
+  color: #ea5c43;
+  line-height: 1.4;
 }
 
 .book-form .btn {
