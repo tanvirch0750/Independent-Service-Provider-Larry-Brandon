@@ -1,12 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { useSignInWithGoogle } from "react-firebase-hooks/auth";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import auth from "../Firebase/Firebase.init";
 import "./Social.css";
 
 const Social = ({ text }) => {
   const [customError, setCustomError] = useState("");
   const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
+
+  const location = useLocation();
+  const from = location?.state?.from?.pathname || "/";
 
   useEffect(() => {
     if (error) {
@@ -23,7 +26,7 @@ const Social = ({ text }) => {
   const navigate = useNavigate();
   useEffect(() => {
     if (user) {
-      navigate("/serrvices");
+      navigate(from, { replace: true });
     } else {
       if (text === "login") {
         navigate("/login");

@@ -76,7 +76,7 @@ const Login = () => {
   };
 
   return (
-    <>
+    <div>
       <PageHeadImg text="Please login and Book now!" />
       <div className="login">
         <form onSubmit={handleSubmit} className="form login-form">
@@ -101,7 +101,7 @@ const Login = () => {
         </form>
         <Social text="Login" />
       </div>
-    </>
+    </div>
   );
 };
 
