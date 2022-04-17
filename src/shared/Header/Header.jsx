@@ -22,13 +22,15 @@ const Header = () => {
         <Link className="navigation-link" to="/">
           Home
         </Link>
-        <Link className="navigation-link" to="/about">
+        {/* <Link className="navigation-link" to="/about">
           About
-        </Link>
+        </Link> */}
         <Link className="navigation-link" to="/work-with-me">
           Work With Me
         </Link>
-
+        <Link className="navigation-link" to="/about-me">
+          About Me
+        </Link>
         {user ? (
           <Link to="/login" className="navigation-link" onClick={handleSignOut}>
             Sign Out

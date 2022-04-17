@@ -1,0 +1,18 @@
+.about-me {
+  padding: 8rem 0;
+}
+
+.about-me-container {
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+}
+
+.about-me img {
+  width: 31rem;
+}
+
+.about-me-text p {
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
