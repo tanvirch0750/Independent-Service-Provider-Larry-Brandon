@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useForm } from "react-hook-form";
-import { HiClock, HiCreditCard, HiVideoCamera } from "react-icons/hi";
+import { BsFillCameraVideoFill } from "react-icons/bs";
+import { HiClock, HiCreditCard } from "react-icons/hi";
 import { useParams } from "react-router-dom";
 import auth from "../../Authentication/Firebase/Firebase.init";
 import servicesDb from "../../utilities/servicesDb";
+import "./Checkout.css";
 
 const Checkout = () => {
   const [user, loading] = useAuthState(auth);
@@ -28,23 +30,21 @@ const Checkout = () => {
       <div className="container">
         <div className="checkout-container">
           <div className="book-details">
-            <strong>Larry Brandon</strong>
+            <strong className="book-details-self-name">Larry Brandon</strong>
             <h2>{service?.name}</h2>
             <div className="book-details-info">
-              <p>
-                <HiClock />
+              <div>
+                <HiClock className="icon" />
                 <strong>{service.time}</strong>
-              </p>
-              <p>
-                <HiVideoCamera />
-                <strong>
-                  Web conferencing details provided upon confirmation.
-                </strong>
-              </p>
-              <p>
-                <HiCreditCard />
+              </div>
+              <div>
+                <BsFillCameraVideoFill className="icon" />
+                <strong>Conferencing details upon confirmation.</strong>
+              </div>
+              <div>
+                <HiCreditCard className="icon" />
                 <strong>{service.price}</strong>
-              </p>
+              </div>
             </div>
             <div className="book-details-text">
               <p>{service.text}</p>
@@ -52,6 +52,7 @@ const Checkout = () => {
           </div>
           <div className="book-form">
             <form onSubmit={handleSubmit(onSubmit)}>
+              <h2>Fill this from for booking</h2>
               <div className="book-form-input-control">
                 <input
                   {...register("name", {

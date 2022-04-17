@@ -31,9 +31,7 @@ const Header = () => {
         <Link className="navigation-link" to="/work-with-me">
           Work With Me
         </Link>
-        <Link className="navigation-link" to="/checkout">
-          Checkout
-        </Link>
+
         {user ? (
           <Link to="/login" className="navigation-link" onClick={handleSignOut}>
             Sign Out

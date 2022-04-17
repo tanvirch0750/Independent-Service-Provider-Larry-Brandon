@@ -1,0 +1,64 @@
+.checkout {
+  padding: 8rem 0;
+}
+
+.checkout-container {
+  max-width: 80rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr !important;
+  grid-gap: 3rem;
+  margin: 0 auto;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 3.2rem;
+}
+
+.book-details-self-name {
+  color: #ea5c43;
+  font-size: 1.8rem;
+  margin-bottom: 2.4rem;
+  display: inline-block;
+}
+
+.book-details h2 {
+  font-size: 3rem;
+  font-family: "Martel Sans", sans-serif;
+  font-weight: 500;
+  margin-bottom: 2.4rem;
+}
+
+.book-details-info {
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: #444;
+}
+
+.book-details-info .icon {
+  font-size: 2.4rem;
+  color: #ea5c43;
+}
+
+.book-details-info div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.book-details-info strong {
+  margin-top: 3px;
+}
+
+.book-details-text {
+  margin-top: 2.4rem;
+}
+
+.book-details-text p {
+  font-size: 1.6rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.book-form form {
+  width: inherit;
+}
