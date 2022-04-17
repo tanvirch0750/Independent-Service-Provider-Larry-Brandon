@@ -1,0 +1,21 @@
+.social {
+  width: 60rem;
+  padding: 2rem;
+  padding-top: 0;
+}
+
+.or-separator {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 2rem;
+  padding: 0 1.5rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+.or-separator div {
+  height: 1px;
+  width: 100%;
+  background-color: #1c1e3c;
+  margin-top: 5.2px;
+}

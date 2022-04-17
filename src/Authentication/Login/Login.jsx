@@ -7,6 +7,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import FormInput from "../../components/FormInput/FormInput";
 import PageHeadImg from "../../components/PageHeadingImg/PageHeadImg";
 import auth from "../Firebase/Firebase.init";
+import Social from "../Social/Social";
 import "./Login.css";
 
 const Login = () => {
@@ -98,7 +99,7 @@ const Login = () => {
             </Link>
           </p>
         </form>
-        {/* <Social text="Login" /> */}
+        <Social text="Login" />
       </div>
     </>
   );
