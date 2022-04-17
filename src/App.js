@@ -8,6 +8,7 @@ import Home from "./pages/Home/Home";
 import WorkWithMe from "./pages/WorkWithMe/WorkWithMe";
 import Footer from "./shared/Footer/Footer";
 import Header from "./shared/Header/Header";
+import NotFound from "./pages/NotFound/NotFound";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             </RequireAuth>
           }
         ></Route>
+        <Route path="*" element={<NotFound />}></Route>
       </Routes>
       <Footer />
     </>
