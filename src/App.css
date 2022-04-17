@@ -1,3 +1,4 @@
+/* gobal button componnet */
 .btn {
   padding: 1.6rem 4rem;
   border: none;
@@ -15,6 +16,7 @@
   font-weight: 700;
 }
 
+/* global logo component */
 .logo {
   color: #1c1e3c;
   font-size: 4rem;
@@ -22,4 +24,57 @@
 
 .logo span {
   color: #ea5c43;
+}
+
+/* global form component */
+form {
+  width: 60rem;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+form h1 {
+  color: #1c1e3c;
+  text-align: center;
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+
+form button,
+.social-btn {
+  width: 100%;
+  padding: 2rem 0;
+  border: none;
+  background-color: #1c1e3c;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.8rem;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-transform: capitalize;
+}
+
+.social-btn {
+  background-color: #ea5c43;
+}
+
+.login-signup-text {
+  font-size: 2rem;
+  color: #1c1e3c;
+  font-weight: 600;
+  text-align: center;
+}
+
+.login-signup-link {
+  color: #ea5c43;
+  margin-left: 0.5rem;
+}
+
+.error-message {
+  font-size: 1.8rem;
+  text-align: center;
+  color: #ee0d09;
+  font-weight: 600;
 }

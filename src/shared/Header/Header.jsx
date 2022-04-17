@@ -23,6 +23,9 @@ const Header = () => {
         <Link className="navigation-link" to="/work-with-me">
           Work With Me
         </Link>
+        <Link className="navigation-link" to="/login">
+          Login
+        </Link>
       </nav>
     </header>
   );
