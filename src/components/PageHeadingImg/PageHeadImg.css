@@ -1,0 +1,23 @@
+.page-head-img {
+  background: linear-gradient(rgba(28, 30, 60, 0.85), rgba(28, 30, 60, 0.85)),
+    url("../../Images/Banner/Banner.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 30rem;
+
+  padding: 0 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-head-img span {
+  font-size: 2rem;
+  color: #ea5c43;
+  font-weight: 600;
+}
+
+.page-head-img h2 {
+  font-size: 4rem;
+  color: #fff;
+}

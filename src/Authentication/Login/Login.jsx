@@ -5,6 +5,7 @@ import {
 } from "react-firebase-hooks/auth";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import FormInput from "../../components/FormInput/FormInput";
+import PageHeadImg from "../../components/PageHeadingImg/PageHeadImg";
 import auth from "../Firebase/Firebase.init";
 import "./Login.css";
 
@@ -75,6 +76,7 @@ const Login = () => {
 
   return (
     <>
+      <PageHeadImg text="Please login and Book now!" />
       <div className="login">
         <form onSubmit={handleSubmit} className="form login-form">
           <h1>Login</h1>
