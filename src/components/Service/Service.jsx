@@ -18,7 +18,7 @@ const Service = ({ service }) => {
             <span>{time}</span>
             <span>{price}</span>
           </p>
-          <button onClick={() => navigate("/checkout")} className="btn">
+          <button onClick={() => navigate(`checkout/${id}`)} className="btn">
             Book Now
           </button>
         </div>
