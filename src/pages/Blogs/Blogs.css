@@ -1,0 +1,22 @@
+.blogs {
+  padding: 8rem 0;
+}
+
+.article {
+  max-width: 80rem;
+  margin: 0 auto;
+
+  padding: 4rem 4rem;
+}
+
+.article h2 {
+  font-size: 3.2rem;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+
+.article p {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  margin-bottom: 1.6rem;
+}

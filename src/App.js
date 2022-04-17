@@ -10,6 +10,7 @@ import Footer from "./shared/Footer/Footer";
 import Header from "./shared/Header/Header";
 import AboutMe from "./pages/About-Me/AboutMe";
 import NotFound from "./pages/NotFound/NotFound";
+import Blog from "./pages/Blogs/Blogs";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/signup" element={<Signup />}></Route>
         <Route path="/work-with-me" element={<WorkWithMe />}></Route>
         <Route path="/about-me" element={<AboutMe />}></Route>
+        <Route path="/blog" element={<Blog />}></Route>
         <Route
           path="/checkout/:id"
           element={
