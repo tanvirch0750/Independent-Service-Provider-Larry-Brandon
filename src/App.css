@@ -18,9 +18,15 @@
 
 .btn-subs {
   background-color: #fff;
+  border: 1px solid #fff;
   color: #ea5c43;
   text-transform: none;
   font-weight: 700;
+}
+
+.btn-subs:hover {
+  background-color: transparent;
+  color: #fff;
 }
 
 /* global logo component */

@@ -4,6 +4,9 @@ import Services from "../../components/Services/Services";
 import "./WorkWithMe.css";
 
 const WorkWithMe = () => {
+  React.useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <PageHeadImg text="Tax preparation & planning services" />

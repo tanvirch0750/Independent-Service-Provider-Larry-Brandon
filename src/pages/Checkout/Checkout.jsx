@@ -11,6 +11,9 @@ import useServices from "../../Hooks/useServices";
 import "./Checkout.css";
 
 const Checkout = () => {
+  React.useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const [user] = useAuthState(auth);
   const [formData, setFormData] = useState([]);
   const [services, loadData] = useServices();

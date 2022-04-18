@@ -8,6 +8,9 @@ import Social from "../Social/Social";
 import "./Signup.css";
 
 const Signup = () => {
+  React.useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const [values, setValues] = useState({
     displayName: "",
     email: "",

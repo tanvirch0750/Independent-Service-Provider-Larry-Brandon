@@ -14,6 +14,9 @@ import Social from "../Social/Social";
 import "./Login.css";
 
 const Login = () => {
+  React.useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const [customError, setCustomError] = useState("");
   const [user1] = useAuthState(auth);
   const [signInWithEmailAndPassword, user, loading, error] =
