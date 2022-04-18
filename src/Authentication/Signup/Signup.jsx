@@ -115,7 +115,7 @@ const Signup = () => {
   return (
     <>
       <PageHeadImg text="Please Signup for better experience" />
-      <div className="signup">
+      <div className="signup container">
         <form onSubmit={handleSubmit} className="form signup-form">
           <h1>Register</h1>
           {inputs.map((input) => (
