@@ -59,4 +59,8 @@
   .navigation-link {
     color: #fff;
   }
+
+  .header {
+    padding: 0 2rem;
+  }
 }

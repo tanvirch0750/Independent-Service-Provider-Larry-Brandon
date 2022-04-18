@@ -77,3 +77,9 @@ form button,
   color: #ee0d09;
   font-weight: 600;
 }
+
+@media only screen and (max-width: 900px) {
+  .logo {
+    font-size: 3.6rem;
+  }
+}

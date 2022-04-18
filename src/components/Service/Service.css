@@ -33,3 +33,15 @@
   color: #ea5c43;
   font-weight: 700;
 }
+
+@media only screen and (max-width: 1200px) {
+  .service-content h2 {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .service-content h2 {
+    font-size: 3rem;
+  }
+}

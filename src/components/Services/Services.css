@@ -4,3 +4,23 @@
   grid-gap: 6rem;
   padding: 4.8rem 0 !important;
 }
+
+@media only screen and (max-width: 1200px) {
+  .services-items {
+    padding: 4.8rem 2rem !important;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .services-items {
+    grid-gap: 3rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .services-items {
+    padding: 4.8rem 1rem !important;
+    grid-template-columns: 1fr;
+    grid-gap: 4rem;
+  }
+}
