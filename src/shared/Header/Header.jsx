@@ -1,18 +1,22 @@
 import { signOut } from "firebase/auth";
-import React from "react";
+import React, { useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
+import { HiMenuAlt1, HiX } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import auth from "../../Authentication/Firebase/Firebase.init";
 import "./Header.css";
 
 const Header = () => {
   const [user] = useAuthState(auth);
+  const [open, setOpen] = useState(false);
+
+  console.log(open);
 
   const handleSignOut = () => {
     signOut(auth);
   };
   return (
-    <header className="header">
+    <header className={`header ${open ? "open" : ""}`}>
       <h1 className="logo">
         <Link to="/">
           Larry <span>Brandon</span>
@@ -44,6 +48,9 @@ const Header = () => {
           </Link>
         )}
       </nav>
+      <button className="hamburger-btn" onClick={() => setOpen(!open)}>
+        {open ? <HiX /> : <HiMenuAlt1 />}
+      </button>
     </header>
   );
 };
