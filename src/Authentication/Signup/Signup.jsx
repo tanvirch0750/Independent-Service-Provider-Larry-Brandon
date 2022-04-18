@@ -20,6 +20,7 @@ const Signup = () => {
     useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
 
   const location = useLocation();
+
   const from = location?.state?.from?.pathname || "/";
 
   const inputs = [
