@@ -3,14 +3,14 @@ import "./App.css";
 import Login from "./Authentication/Login/Login";
 import RequireAuth from "./Authentication/RequireAuth/RequireAuth";
 import Signup from "./Authentication/Signup/Signup";
+import AboutMe from "./pages/About-Me/AboutMe";
+import Blog from "./pages/Blogs/Blogs";
 import Checkout from "./pages/Checkout/Checkout";
 import Home from "./pages/Home/Home";
+import NotFound from "./pages/NotFound/NotFound";
 import WorkWithMe from "./pages/WorkWithMe/WorkWithMe";
 import Footer from "./shared/Footer/Footer";
 import Header from "./shared/Header/Header";
-import AboutMe from "./pages/About-Me/AboutMe";
-import NotFound from "./pages/NotFound/NotFound";
-import Blog from "./pages/Blogs/Blogs";
 
 function App() {
   return (
