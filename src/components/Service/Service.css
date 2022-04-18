@@ -1,5 +1,6 @@
 .service {
   border: 1px solid rgba(28, 30, 60, 0.123);
+  transition: 300ms ease-in-out;
 }
 
 .service img {
@@ -15,6 +16,10 @@
   font-weight: 300;
   margin-top: 2rem;
   margin-bottom: 3.2rem;
+}
+
+.service:hover .service-content h2 {
+  color: #ea5c43;
 }
 
 .service-content .service-text {
