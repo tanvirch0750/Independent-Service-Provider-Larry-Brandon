@@ -11,3 +11,14 @@ Live website link [Larry Brandon](https://larry-brandon.firebaseapp.com).
 - To show message used react toastify
 - For routing used react router dom
 - For styling I use only cutom css
+
+## Technologies I use for this project
+
+- React Js
+- React Router
+- React Firebase Hook
+- React Form Hook
+- React Icons
+- Firebase Authentication
+- Firebase Hosting
+- Custom css
