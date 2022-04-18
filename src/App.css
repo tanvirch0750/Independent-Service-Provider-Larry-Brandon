@@ -3,10 +3,17 @@
   padding: 1.6rem 4rem;
   border: none;
   color: #fff;
-  background-color: #ea5e3c;
+  background-color: #ea5c43;
+  border: 1px solid #ea5c43;
   font-size: 2rem;
   cursor: pointer;
   text-transform: capitalize;
+  transition: 300ms ease-in-out;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: #ea5c43;
 }
 
 .btn-subs {
