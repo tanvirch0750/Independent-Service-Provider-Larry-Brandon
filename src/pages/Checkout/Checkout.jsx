@@ -32,7 +32,7 @@ const Checkout = () => {
 
   return (
     <>
-      <PageHeadImg text={`Book - ${service?.name}`} />
+      <PageHeadImg text={`Book - ${service?.name ? service?.name : ""}`} />
       {loadData ? (
         <Loading />
       ) : (

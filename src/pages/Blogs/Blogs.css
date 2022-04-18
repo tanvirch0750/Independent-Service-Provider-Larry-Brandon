@@ -20,3 +20,14 @@
   line-height: 1.6;
   margin-bottom: 1.6rem;
 }
+
+@media only screen and (max-width: 700px) {
+  .article h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+  }
+  .article {
+    padding: 0rem;
+    margin-bottom: 4rem;
+  }
+}
