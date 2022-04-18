@@ -36,7 +36,7 @@ form {
 form h1 {
   color: #1c1e3c;
   text-align: center;
-  font-size: 5rem;
+  font-size: 4.4rem;
   margin-bottom: 4rem;
 }
 
@@ -81,5 +81,23 @@ form button,
 @media only screen and (max-width: 900px) {
   .logo {
     font-size: 3.6rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .form {
+    width: 100% !important;
+    padding: 0;
+  }
+
+  .form h1 {
+    font-size: 3.6rem;
+  }
+
+  .login-signup-text {
+    font-size: 1.6rem;
+  }
+  .login-signup-link {
+    font-size: 1.6rem;
   }
 }

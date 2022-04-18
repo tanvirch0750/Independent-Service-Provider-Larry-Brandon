@@ -97,7 +97,7 @@ const Login = () => {
   return (
     <div>
       <PageHeadImg text="Please login and Book now!" />
-      <div className="login">
+      <div className="login container">
         <form onSubmit={handleSubmit} className="form login-form">
           <h1>Login</h1>
 

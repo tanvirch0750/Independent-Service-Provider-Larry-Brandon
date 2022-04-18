@@ -7,6 +7,11 @@
   margin-bottom: 6rem;
 }
 
+.login-form {
+  padding: 6.4rem 0;
+  padding-bottom: 0;
+}
+
 .forgot-password--text {
   font-size: 1.8rem;
   color: #1c1e3c;
@@ -19,4 +24,15 @@
   color: #ea5c43;
   cursor: pointer;
   margin-left: 0.5rem;
+}
+
+@media only screen and (max-width: 700px) {
+  .login-form {
+    padding: 4.8rem 0;
+    padding-bottom: 2rem;
+  }
+
+  .forgot-password--text {
+    font-size: 1.6rem;
+  }
 }
