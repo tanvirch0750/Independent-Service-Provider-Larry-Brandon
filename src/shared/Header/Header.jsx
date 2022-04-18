@@ -2,7 +2,7 @@ import { signOut } from "firebase/auth";
 import React, { useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { HiMenuAlt1, HiX } from "react-icons/hi";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import auth from "../../Authentication/Firebase/Firebase.init";
 import "./Header.css";
 
@@ -10,7 +10,9 @@ const Header = () => {
   const [user] = useAuthState(auth);
   const [open, setOpen] = useState(false);
 
-  console.log(open);
+  let activeStyle = {
+    color: "#ea5c43",
+  };
 
   const handleSignOut = () => {
     signOut(auth);
@@ -23,29 +25,54 @@ const Header = () => {
         </Link>
       </h1>
       <nav className="navigation">
-        <Link className="navigation-link" to="/">
+        <NavLink
+          className="navigation-link"
+          to="/"
+          style={({ isActive }) => (isActive ? activeStyle : undefined)}
+        >
           Home
-        </Link>
+        </NavLink>
         {/* <Link className="navigation-link" to="/about">
           About
         </Link> */}
-        <Link className="navigation-link" to="/work-with-me">
+        <NavLink
+          className="navigation-link"
+          to="/work-with-me"
+          style={({ isActive }) => (isActive ? activeStyle : undefined)}
+        >
           Work With Me
-        </Link>
-        <Link className="navigation-link" to="/about-me">
+        </NavLink>
+        <NavLink
+          className="navigation-link"
+          to="/about-me"
+          style={({ isActive }) => (isActive ? activeStyle : undefined)}
+        >
           About Me
-        </Link>
-        <Link className="navigation-link" to="/blog">
+        </NavLink>
+        <NavLink
+          className="navigation-link"
+          to="/blog"
+          style={({ isActive }) => (isActive ? activeStyle : undefined)}
+        >
           Blog
-        </Link>
+        </NavLink>
         {user ? (
-          <Link to="/login" className="navigation-link" onClick={handleSignOut}>
+          <NavLink
+            to="/login"
+            className="navigation-link"
+            onClick={handleSignOut}
+            style={({ isActive }) => (isActive ? activeStyle : undefined)}
+          >
             Sign Out
-          </Link>
+          </NavLink>
         ) : (
-          <Link className="navigation-link" to="/login">
+          <NavLink
+            className="navigation-link"
+            to="/login"
+            style={({ isActive }) => (isActive ? activeStyle : undefined)}
+          >
             Log in
-          </Link>
+          </NavLink>
         )}
       </nav>
       <button className="hamburger-btn" onClick={() => setOpen(!open)}>

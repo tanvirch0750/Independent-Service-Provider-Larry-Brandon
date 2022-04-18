@@ -92,7 +92,7 @@ h6 {
   font-weight: 300;
 }
 
-*:focus {
+input:focus {
   outline: none;
   box-shadow: 0 0 0 0.4rem rgba(234, 92, 67, 0.5);
 }
