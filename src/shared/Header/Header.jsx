@@ -1,5 +1,5 @@
 import { signOut } from "firebase/auth";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { HiMenuAlt1, HiX } from "react-icons/hi";
 import { Link, NavLink } from "react-router-dom";
@@ -12,6 +12,21 @@ const Header = () => {
 
   let activeStyle = {
     color: "#ea5c43",
+  };
+
+  // sticky nav
+  useEffect(() => {
+    window.addEventListener("scroll", isSticky);
+    return () => {
+      window.removeEventListener("scroll", isSticky);
+    };
+  });
+  const isSticky = (e) => {
+    const header = document.querySelector(".header");
+    const scrollTop = window.scrollY;
+    scrollTop >= 250
+      ? header.classList.add("is-sticky")
+      : header.classList.remove("is-sticky");
   };
 
   const handleSignOut = () => {

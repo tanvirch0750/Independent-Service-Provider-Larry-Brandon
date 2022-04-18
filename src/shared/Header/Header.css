@@ -32,6 +32,19 @@
   display: none;
 }
 
+.is-sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 2px 24px 0 rgb(0 0 0 / 15%);
+  background-color: #ffffff !important;
+  animation: 500ms ease-in;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
 /* Media Query */
 @media only screen and (max-width: 900px) {
   .hamburger-btn {
