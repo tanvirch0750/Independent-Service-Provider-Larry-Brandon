@@ -1,9 +1,9 @@
 .banner {
-  background: linear-gradient(rgba(28, 30, 60, 0.85), rgba(28, 30, 60, 0.85)),
+  background: linear-gradient(rgba(28, 30, 60, 0.9), rgba(28, 30, 60, 0.9)),
     url("../../Images/Banner/Banner.jpg");
   min-height: calc(100vh - 10rem);
   background-size: cover;
-  background-position: left;
+  background-position: center;
 
   display: flex;
   align-items: center;
