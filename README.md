@@ -1,6 +1,6 @@
 # Larry Brandon
 
-Live website link [Larry Brandon](https://larry-brandon.firebaseapp.com).
+Live website link [Larry Brandon](https://larry-brandon.web.app/).
 
 ## Website description
 
